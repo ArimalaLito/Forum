@@ -1,0 +1,47 @@
+@import "fonts"
+@import "libs"
+@import "base"
+@import "vars"
+
+
+.grid
+  display: grid
+a
+  text-decoration: none
+  color: $general
+.header
+  min-height: 100vh
+  background-size: cover
+  background-position: center
+  position: relative
+  .main-menu
+    padding: 10px
+    margin: 20px
+    grid-template-columns: repeat(8, 1fr)
+.container
+  max-width: 1200px
+  margin: auto
+  padding: 0 $gutter
+.main-content
+  color: $general
+  grid-template-columns: repeat(2, 1fr)
+.left-content
+  grid-template-columns: repeat(2, 1fr)
+  grid-gap: 30px
+  .block-header
+    width: 255px
+    height: 148px
+    grid-gap: 10px
+  .block-1
+    background-color: $block2
+  .block-2
+    background-color: $block3
+  .block-3
+     background-color: $block4
+  .block-4
+    background-color: $block5
+
+
+
+
+@import "media" // Всегда в конце
